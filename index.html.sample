@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Mindmap Wiki</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div style="width: 600px; margin: 0 auto">
+      <h1>Mindmap Wiki</h1>
+      <ol class="gradient-list" id="list"></ol>
+      <script>
+        let data = [HTML_FILE_LIST];
+        let list = document.getElementById("list");
+
+        data.forEach((item) => {
+          let li = document.createElement("li");
+          let link = document.createElement("a");
+
+          link.setAttribute("href", `${item}`);
+          link.setAttribute("target", "_blank");
+          // ./dist/sub/hoge.md.html -> hoge
+          let title = item.split("/").slice(-1)[0].split(".")[0];
+
+          if (title.includes("_")) {
+            title = title.charAt(0).toUpperCase() + title.slice(1);
+            link.textContent = title.split("_").join(" ");
+          } else {
+            link.textContent = title;
+          }
+
+          li.appendChild(link);
+          list.appendChild(li);
+        });
+      </script>
+    </div>
+  </body>
+</html>
