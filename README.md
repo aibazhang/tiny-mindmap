@@ -6,7 +6,7 @@ Create your mindmap web pages from markdown with a tiny shell scirpt
 - Static Site (so you can deploy it to your GitHub Pages)
 - Without ANY Local Environments
 
-[Try it here](aibazhang.github.io). 😎
+[Try it here](https://aibazhang.github.io/). 😎
 
 This project is heavily inspired/powered by [GitHub Actions](https://docs.github.com/en/actions) and [Markmap](https://github.com/gera2ld/markmap).
 
@@ -16,9 +16,9 @@ This project is heavily inspired/powered by [GitHub Actions](https://docs.github
 
 ## Usage
 
-- Clone this Repository
+- Clone this repository
 
-  `git clone`
+  `git clone https://github.com/aibazhang/tiny-mindmap`
 
 - Add some `.md` files into directory `./md`
 
