@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/style.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/index.umd.min.js"></script><script>(r => {
+          setTimeout(r);
+        })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"root","d":0,"v":"","c":[{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"h1 Heading","c":[{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"h2 Heading","c":[{"t":"heading","d":3,"p":{"lines":[4,5]},"v":"h3 Heading","c":[{"t":"list_item","d":5,"p":{"lines":[6,7]},"v":"item 1"},{"t":"list_item","d":5,"p":{"lines":[7,8]},"v":"item 2"},{"t":"list_item","d":5,"p":{"lines":[8,9]},"v":"item 3"}]},{"t":"heading","d":3,"p":{"lines":[10,11]},"v":"h3 Heading","c":[{"t":"list_item","d":5,"p":{"lines":[12,13]},"v":"item 1"},{"t":"list_item","d":5,"p":{"lines":[13,14]},"v":"item 2"}]}]}]},{"t":"heading","d":1,"p":{"lines":[15,16]},"v":"h1 Heading","c":[{"t":"heading","d":2,"p":{"lines":[17,18]},"v":"h2 Heading"}]},{"t":"heading","d":1,"p":{"lines":[19,20]},"v":"h1 Heading"}],"p":{}})</script>
+</body>
+</html>
