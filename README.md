@@ -32,4 +32,4 @@ This project is heavily inspired/powered by [GitHub Actions](https://docs.github
 
 ## Caution
 
-- Execute `git pull` before you add news `.md` files from the second time.
+- Execute `git pull` before you add new `.md` files after the second time.
