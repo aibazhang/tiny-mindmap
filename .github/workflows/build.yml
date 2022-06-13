@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Install dependency
-        run: npm install markmap-cli
+        run: npm install markmap-cli@0.13.2
 
       - name: Run convert script
         run: bash md2mindmap.sh
